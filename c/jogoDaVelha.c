@@ -1,49 +1,83 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 
-	int col, linha;
+	int linha,coluna, cont = 0;
 	int m[3][3];
-	for(int i = 0; i< 3; i++)
+	char pos[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',};
+
+	for (int i = 0; i<3 ; i++)
 	{
-		for (int c = 0; i<3; i++)
-			m[i][c] = 2;
-	}	
-	for (int i = 0; i< 3; i++)
+		for(int c = 0; c<3 ; c++){
+				m[i][c] = cont;
+				cont++;	
+		}
+
+	}
+
+	for (int i = 1; i<= 3; i++)
 	{
-		printf("          ------------------\n");
-		printf("linha %d ->|     |    |     |\n",i+1);
+		printf("           -------------------\n");
+		printf("linha %d ->|     |     |     |\n",i);
 	}
 	
-	printf("-------------------------\n");
+	printf("           -------------------\n");
 	printf("O primeiro jogador é o X e o segundo O\n");
-	printf("Escolha uma posição(num coluna espaço linha)\nlinha 1 coluna 1( Exemplo: 1 1)\n");
+	printf("Escolha uma posição(Exemplo: 1 1, linha 1 coluna 1): \n");
 	for (int i = 1; i <= 9; i++)
 	{
-		if (i%2 != 0 ){
-			printf("Vez do X:\n");
-		}else{
-			printf("Vez do O:\n");
-		}
-
-		scanf("%d %d", &linha, & col);
+		
+		do{
+			if (i%2 != 0 ){
+				printf("Vez do X:\n");
+			}else{
+				printf("Vez do O:\n");
+			}
+			scanf("%d %d", &linha, &coluna);
+		}while(linha >3 || coluna >3 || m[linha-1][coluna-1] > 8);
+		system("clear");
 		linha--;
-		col--;
+		coluna--;
 	// 1 representa o X e 0 Representa O
 		if (i%2 != 0 ){	
-			m[linha][col] = 1;
+			pos[m[linha][coluna]] = 'X';
+			m[linha][coluna] = 9;
 		}else{
-			m[linha][col] = 0;
+			pos[m[linha][coluna]] = 'O';
+			m[linha][coluna] = 10;
 		}
-		for (int l = 0; l< 3; l++)
+		cont =0;
+		for (int i = 0; i< 3; i++)
 		{
-			for(int c = 0; c<3; c++)
-			{
-				printf("|  %d  |",m[l][c]);			
-			}
-			printf("\n");
+			printf("----------------------\n");
+			printf("|  %c  |  %c  |  %c  |\n",pos[cont],pos[cont+1], pos[cont+2]);
+			cont +=3;
 		}
+		printf("----------------------\n");
+		
+		if (i >=5)
+		{
+			if(m[0][0] == m[1][1] && m[1][1] == m[2][2] ){
+				printf("Congratulations!\n");
+				break;
+			}
+				if(m[0][2] == m[1][1] && m[1][1] == m[2][0]){
+				printf("Congratulations!\n");
+				break;
+			}
+			
+			if(m[linha][0] == m[linha][1] && m[linha][1] == m[linha][2]){
+				printf("Congratulations!\n");
+				break;
+			}
+			if(m[0][coluna] == m[1][coluna] && m[1][coluna] == m[2][coluna]){
+				printf("Congratulations!\n");
+				break;
+			}
 
+
+		}
 	}
 	
 	return 0;
