@@ -1,11 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char identifica_vencedor(int m) {
+	char vencedor;
+	
+	if(m == 9)
+		vencedor = 'X';
+	else
+		vencedor = 'O';
+	
+	return vencedor;
+}
+
 int main(){
 
 	int linha,coluna, cont = 0;
 	int m[3][3];
 	char pos[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',};
+	char vencedor;
 
 	for (int i = 0; i<3 ; i++)
 	{
@@ -59,20 +71,28 @@ int main(){
 		if (i >=5)
 		{
 			if(m[0][0] == m[1][1] && m[1][1] == m[2][2] ){
-				printf("Congratulations!\n");
+				printf("Congratulations ");
+				vencedor = identifica_vencedor(m[0][0]);
+				printf("%c!\n", vencedor);
 				break;
 			}
-				if(m[0][2] == m[1][1] && m[1][1] == m[2][0]){
-				printf("Congratulations!\n");
+			if(m[0][2] == m[1][1] && m[1][1] == m[2][0]){
+				printf("Congratulations ");
+				vencedor = identifica_vencedor(m[0][2]);
+				printf("%c!\n", vencedor);
 				break;
 			}
 			
 			if(m[linha][0] == m[linha][1] && m[linha][1] == m[linha][2]){
-				printf("Congratulations!\n");
+				printf("Congratulations ");
+				vencedor = identifica_vencedor(m[linha][0]);
+				printf("%c!\n", vencedor);
 				break;
 			}
 			if(m[0][coluna] == m[1][coluna] && m[1][coluna] == m[2][coluna]){
-				printf("Congratulations!\n");
+				printf("Congratulations ");
+				vencedor = identifica_vencedor(m[0][coluna]);
+				printf("%c!\n", vencedor);
 				break;
 			}
 
