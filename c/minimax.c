@@ -102,7 +102,7 @@ int minimax(int depth, char next){
     }
    
     
-} // 1
+} 
 void pcMove(){
     int score;
     int bestScore = INT_MIN;
