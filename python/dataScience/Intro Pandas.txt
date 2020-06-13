@@ -1,0 +1,10 @@
+Pandas
+    Biblioteca de código aberto, escrita sobre numpy
+    visualizaçõa e limpeza de dados eficiente
+    Semelhante ao Excel
+    Pode trabalhar com grandes quantidades de dados
+    Permite trabalhar com diferentes tipos de dados
+    Possui metodos próprios de visualização
+    
+    - Series 
+        Muito parecido com o dicionario, permite fazer uma relação de um index e um data
