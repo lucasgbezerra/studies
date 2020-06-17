@@ -8,3 +8,7 @@ Pandas
     
     - Series 
         Muito parecido com o dicionario, permite fazer uma relação de um index e um data
+    - Data Frame
+        Obejto principal de Pandas,um conjunto de Series
+    - Groupby
+        É um método do pandas que agrupa dados em relação a uma coluna
