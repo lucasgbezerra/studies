@@ -1,0 +1,3 @@
+    Matplotlib é uma bibilioteca de visualização de dados. Ela permite potar gráficos te dando controle sobre todos os aspectos da figura gerada. Foi projetada para se aproximar do Matlab
+    - subplots = método orienatado a objeto
+    
