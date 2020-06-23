@@ -1,0 +1,6 @@
+Seaborn
+    Biblioteca de visualização estatistica de dados
+    Possui excelentes estilos padrões.
+    Escrita a partir de matplotlib
+    
+https://seaborn.pydata.org/
