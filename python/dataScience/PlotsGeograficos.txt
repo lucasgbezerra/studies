@@ -1,0 +1,2 @@
+Presente na biblioteca do  plotly e no matplotlib na extensão basemap
+https://plotly.com/python/choropleth-maps/
