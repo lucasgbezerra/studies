@@ -3,4 +3,7 @@ Seaborn
     Possui excelentes estilos padrões.
     Escrita a partir de matplotlib
     
+    Jointplot(): Draw a plot of two variables with bivariate and univariate graphs.
+    
 https://seaborn.pydata.org/
+

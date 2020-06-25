@@ -1,0 +1,4 @@
+Plotly e Cluffinks
+    São bibliotecas de analise de dados interativas. Aumentado o poder de interpretação dos dados
+    https://plotly.com/
+    https://github.com/santosjorge/cufflinks
