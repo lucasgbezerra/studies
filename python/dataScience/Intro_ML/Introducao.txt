@@ -1,0 +1,47 @@
+Intro ao machine learning
+Machine Learning é um metódo de analise de dados que automatiza o processo de criação de modelos. Os algoritimos iterativamente aprendem com os dados e encontram padrões nos dados, sem terem sido diretamente programado para isso.
+
+- Pra que é usado
+    Detecção de fraude
+    Anuncios automaticos na web
+    Pesquisas na web
+    Modelo de precificação de ativos financeiros
+    Detecção de invasores em redes
+    Sistema de recomendação(Netflix,Spotify)
+    Reconhecimento de padrões em imagens
+    Filtro de spam em email
+    
+    
+    Processo básico do ML
+    
+                                    <==> Dados de teste <==>
+                                    |                       |
+    Aquisição de dados<=> limpeza dos dados          Teste do modelo <=> Usopratico
+                                    |                       |
+                                    <==>Dados de treinamento<==>
+                                        e construção do
+                                            modelo
+                                            
+     Aquisição de dados, 'materia prima' do ML. fundamental para a criação de modelos
+     Limpeza para purificar os dados retirandos possíveis quebras
+     Dados de treinamento e construção do modelo: contruir o modelo e encontrar os parametros para predição por meio do treinamento
+     Dados de teste: teste de como o modelo aprendeu, verificar se as informações são mesmo relevantes pro conjunto de dados. Não deve ter corrlaçaõ com os Dados de treinamento
+     Teste do modelo: testes do modelo utilizando os dados de teste e treinamento
+     Uso prático: aplicação do modelo já consistente.
+     
+     3 tipos de Machine Learning:
+         1 - Supervised Learning: 
+             Fornece pro modelo dados já rotulados, você ja tem conhecimento prévio sobre os dados. Utiliza os dados para aprender e construir o modelo e rotular demais parametros desconhecidos.
+         Por Exemplo: Em uma linha de produção de peças temos um conjunto de dados com as caracteristicas das peças e dados que correspondem a falha ou não da peça.Baseado nas caracteristicas é possível predizer o estado final da peça. O algoritmo de aprendizado recebe esses dados com as saidas corretas e de maneira iterativa ajusta o modelo para que ele se adapte ao conjunto de dados de treino.
+         Na sequencia o algoritmo testará sua precisão utilizando do conjunto de dados de teste.
+         
+         2 - Unsupervised Learning: 
+             Possui apenas os parametros,sem rotulos, e busca subgrupos dentro dos dados que compartilham semelhanças.
+             Tecnicas populares: K-means, clustering, singular value deomposition
+             Algoritmos ultilizados na segmentaçãos de texto em tópicos, identificação de outlier em conjuntos de dados e recomendação de itens à clientes.
+             
+         3 - Reinforcement Learning: algoritmos que aprendem a executar ações baseado em experiências com o meio
+         Principal utilização em róbotica,jogos e navegação.
+         Aprendizagem através de tentativa e erro. pares de estado-ação que geram a maior recompensa.
+         O agente cria uma política de tomada de decisões, baseada no estado atual
+         
