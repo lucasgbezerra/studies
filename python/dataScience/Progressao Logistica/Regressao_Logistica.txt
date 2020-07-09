@@ -1,0 +1,14 @@
+Regressão Logistica(seção 4.3- Introduction to Statistical Learning)
+   Método de classificação.
+   Exempo de problemas de classificação:
+       Filtos de e-mail
+       Modelos preditores de clientes inadimplentes
+       Diagnostico de doenças
+   Tenta predizer categorias discretas
+   Função logistica(sigmoide) só retorna valores entre 0 e 1.
+   É possível colocar a Regressão linear dentro da função logistica
+   A saida é interpretado como a probabilidade de ser 0 ou 1
+   As métricas de avaliação são diferentes da regressão linear
+   Utiliza-se a matriz de confusão:
+   
+   Exemplo testando a doença 

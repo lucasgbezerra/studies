@@ -1,0 +1,17 @@
+Balanço vies-variancia(CAP 2 - Introduction to Statistical Learning)
+
+    Fundamental para se entender a performance do modelo.
+    Considera a complexidade do modelo e quanto de erro que ele é capaz de gerar
+    no grupo de dados e teste e treinamento.
+    
+    Imaginando um alvo:
+        Quando os pontos estão distribuidos muito proximos e no centro(baixo-vies e baixa-variância)
+        Quando os pontos estão espaçados e proximos do centro(baixo-viés e alta-variância)
+        Quando os pontos estão distribuidos muito proximos pórem longe do centro(alto-viés e baixa-variância)
+        Quando os pontos estão espaçados e longe do centro(alto-viés e alta-variância)
+      
+      Baseado nesse exemplo. O modelo ganha(aumenta) o víes a medida que a média das predições se afasta do valor correto. Quanto mais diferentes forem as tentativas entre si a variancia ganhará(aumenta)
+      Aumentar a complexidade pode ser um erro, visto que quanto mais complexo maior a varianciae menor o vies. Ao fazer isso ocorre o "Overfitting" do modelo.O modelo não conseguirá captar o comportamento geral dos doados, apenas se adequará ao grupo de treino.Desta forma, quando aplicado em novos dados de teste o modelo terá um erro maior.
+      
+      
+      

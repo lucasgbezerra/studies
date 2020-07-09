@@ -1,0 +1,8 @@
+Regressão Linear
+    Cap 2 e 3 do livro Introdction to Statical Learning
+    Modelos que utilizam relações lineares entre algumas variaveis afim de predizer o valor de outras
+    Exemplo da relação da altura pai-filho.
+        o filho tende a ter uma altura proxima da do pai e da média da população a qual ele pertence.
+        Tendo isso em mente é possível predizer a altura do filho sem nem ao menos o pai tê-lo tido apenas traçando um regressaõ linear dos dados de altura pai-filho daquela população com dados de altura de pais e filhos já existentes
+        O objetivo da regressão linear é minimizar a distancia vertical dos pontos até a linha
+        
