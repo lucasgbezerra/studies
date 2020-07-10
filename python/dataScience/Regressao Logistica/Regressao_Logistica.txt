@@ -1,0 +1,38 @@
+Regressão Logistica(seção 4.3- Introduction to Statistical Learning)
+   Método de classificação.
+   Exempo de problemas de classificação:
+       Filtos de e-mail
+       Modelos preditores de clientes inadimplentes
+       Diagnostico de doenças
+   Tenta predizer categorias discretas
+   Função logistica(sigmoide) só retorna valores entre 0 e 1.
+   É possível colocar a Regressão linear dentro da função logistica
+   A saida é interpretado como a probabilidade de ser 0 ou 1
+   As métricas de avaliação são diferentes da regressão linear
+   
+   Matematicamente:
+        O(z)=1/(1+e^(-z)) -> função sigmoide
+        
+        
+   Utiliza-se a matriz de confusão:
+   
+   Exemplo testando a doença
+                     | VALOR PREDITO:  | VALOR PREDITO:
+                     |      NÃO        |       SIM
+ 
+ VALOR CORRETO: NÃO  |     50(TN)      |        10(FP)
+ -------------------------------------------------------------
+ VALOR CORRETO: SIM  |      5(FN)      |        100(TP)
+                     |                 |
+     
+     TN: True negative -> a pessoa NÃO tem a doença e o modelo prediz que NÃO tem
+     TP: True positive -> a pessoa tem a doença e o modelo prediz que tem
+     FP: False Positive -> a pessoa NÃO tem a doença e o modelo prediz que tem(ERRO TIPO 1)
+     FN: False Negative -> a pessoa tem a doença e o modelo prediz que NÃO tem(ERRO TIPO 2)
+     
+     Calculo da precisão
+     Quanto em media o modelo acerta:
+                (TP+TN)/total = (100+50)/165= 0.91
+     Quanto em media o modelo erra:
+                (FP+FN)/total = (10+5)/165= 0.9
+                
