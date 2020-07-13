@@ -1,0 +1,22 @@
+K Nearest Neighbors é um algoritmo de classificação de dados
+Exemplo: dog and horse
+baseado na altura e peso dos animais é montado um grafico onde x é o peso e y a altura, formasse dois grupos distinguiveis visualmente, o de cachorros, menores e leves, e o de cavalos, maiores e pesados. A partir disso é possivel predizer se um novo ponto faz referencia a um cavalo ou cachorro, baseado na sua possição no grafico em relação aos grupos
+
+Algoritmo de treino
+    Guardar os dados
+Algoritmo de teste/preditor
+    Calcula a distancia do x(ponto) até os demais
+    Organiza os dados em ordem crescente de distância
+    Classsifica a classe baseado na maioria dos primeiros k(k é o número de pontos que será englobado na circuferencia) valores
+
+Pros do modelo:
+    Simples
+    Processo de treino tivial
+    Funciona bem com grande número de classes
+    Facil de adicionar dados
+    Poucos parametros
+Contras
+    Elevado custo computacional(pior para grandes conjuntos de dados)
+    não é ideal para dados com muitos parâmetros(dimensões)
+    Parametros categoricos não funcinam bem
+    
