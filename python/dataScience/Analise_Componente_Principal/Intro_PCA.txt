@@ -1,0 +1,6 @@
+Analise do componente principal - PCA(Seção 10)
+    Método não superervisionado, usado para examinar relações entre conjunto de variaveis, para identificar uma estrutura basica por trás.
+    Enquanto a Regressão determina a linha que melhor se ajusta ao conjunto de dados o PCA determina o melhor conjunto ortogonal(conjunto de linhas perpendicular no espaço n-dimensional) de linhas.
+    Caso a tecnica seja utilizada em um conjunto de dados com muitas variaveis é possivel comprimir a variância para apenas alguns componentes
+    Dificil de interpretar os novos Componentes
+    

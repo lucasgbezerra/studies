@@ -1,0 +1,6 @@
+SVMs(seção 9)
+    Métodos de ML baseado em  aprendizado supervisionado que analisam os dados e reconhecem, usados em regressao e classificação
+    Classificação de novos elementos baseados em um modelo previo
+    Um modelo SVM é uma representação dos exemplos como pontos no espaço, mapeados de forma que as categorias são divididas com a maior distância possivel entre elas
+    NOvos exemplos são mapeados de acordo com a zona em que cairem.
+    Escolhe o "hiperplano" que vai maximizar a margem entre as classes 

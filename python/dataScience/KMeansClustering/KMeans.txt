@@ -1,0 +1,22 @@
+K Means Clustering(seção 10)
+    Método de ML baseado em aprendizado não supervisionado
+    Tentará agrupar os dados em grupos por meio de caracteristicas similares
+    Usado para:
+        Geoestatistica
+        Segmentação de mercado
+        Agrupamento de clientes
+        Agrupamento automatico de documentos
+    
+    Como o Algoritmo funciona:
+        Escolhe um número K de grupos
+        Aleatoriamente(na primeira iteração) escolher uma classe para todos os pontos
+        Até que os cluster parem de mudar:
+            Para cada cluster obtenha o centroide do ponto calculando a média dos vetores dos pontos do cluster
+            Defina cada ponto ao cluster na qual o centroide é mais proximo
+
+    A escolha do K pode ser problematica, é preciso saber o que se esta analisando.
+    Um método para a escolha do K:
+        Calcule a soma dos erros quadrados(SEQ) para alguns valores de K
+        A soma dos quadrados dos erros é definico como o quadrado das distancias entre cada erro e o seu centroide
+        Se você plotar K vs SEQ vera que o erro diminui a medida que K aumenta
+        O valor de K onde ocorre queda abrupta no SEQ isso produz o "efeito cotovelo"

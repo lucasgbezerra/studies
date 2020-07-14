@@ -1,0 +1,26 @@
+Árvore de decisão e Floresta aleatória(seção 8 do livro)
+    Explicando árvore de decisão com um exemplo:
+        Você e um amigo sempre marcam de jogar futebol aos sabados, e ele não vai todos os dias. A ida dele esta relacionada com algumas variavéis: temperatura, clima, umidade, vento.
+        Você começa a anotar os dias que ele foi ou deixou de ir e o estado das variavéis. Chegando em uma tabela. Apartir dela você pode montar uma árvore de decisões.
+        
+                                            -------------TEMPO-------------
+                                            |               |             |
+                                          (Sol)         (Nublado)       (Chuva)
+                                            |               |             |
+                                      ---UMIDADE---
+                                      |           |
+                                   (<75)         (>75)
+                                      |           |
+                                     SIM         NÃO
+                                     
+Na árvore temos:
+    Nós: TEMPO, UMIDADE, ...
+    Ramos: saidas de um nó
+    Raiz: O que faz a 1 divisão (TEMPO)
+    Folhas: O final,  o que toma a decisão
+   
+Os dados devem ser divididos pelo parâmetro que dá o maior ganho de informação
+
+Árvores de decisão são muito sucetíveis ao overfitting. Florestas Aleatorias é um metodo que minimiza o Overfitting.
+Usando de amostragens aleatorias de escolha de parametros para a divisão dos dados(Floresta aleatoria) OU Criar árvores usando divisões diferentes do conjunto de dados
+O uso da Floresta Aleatoria, quando se tem um parametro muito forte é a melhor escolha pois, na construção normal da arvore a maioria usará esse parametro como raiz. Entretanto, na Floresta aleatoria as arvores serão descorrelacionadas resultando na redução da variância.
